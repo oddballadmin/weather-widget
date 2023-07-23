@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "Weather Extension",
+  "description": "This extension displays the current weather",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "icons/cloudy-icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["http://api.weatherapi.com/"]
+}
