@@ -1,5 +1,5 @@
 // Replace YOUR_API_KEY with your WeatherAPI key
-const API_KEY = "";
+const API_KEY = "d3ad3f5975fe4e2a85112129232307";
 const locationDiv = document.getElementById("location");
 const temperatureDiv = document.getElementById("temperature");
 
@@ -8,7 +8,7 @@ navigator.geolocation.getCurrentPosition(
     (position) => {
         // Get weather data from WeatherAPI
         fetch(
-            `http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${position.coords.latitude},${position.coords.longitude}`
+            `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${position.coords.latitude},${position.coords.longitude}`
         )
             .then((response) => response.json())
             .then((data) => {
